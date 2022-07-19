@@ -33,22 +33,3 @@ function showComment() {
     document.getElementById('container').innerHTML = optionsString;
 }
 showComment();
-
-// const text = 'some text what contains word ViaGra and other XxX words';
-
-// function checkSpam(text) {
-//     let arr = text.split(' ');
-//     console.log(arr);
-//     arr = arr.map(element => {
-//         if (element.toLowerCase() === 'viagra') {
-//             return '***';
-//         };
-//         if (element.toLowerCase() === 'xxx') {
-//             return '***';
-//         };
-//         return element;
-//     })
-//     let newString = arr.join(' ');
-//     return newString;
-// }
-// checkSpam(text);
