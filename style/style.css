@@ -1,0 +1,9 @@
+#newComment {
+    width: 300px;
+    height: 150px;
+    resize: vertical;
+}
+
+#btn {
+    width: 306px;
+}
