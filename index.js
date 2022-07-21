@@ -3,13 +3,15 @@ document.querySelector('button').addEventListener('click', addComment); // по�
 
 function addComment() {
     let message = document.getElementById('newComment').value; // переменная, в которую записывается строка из textarea, введенная пользователем 
+    console.log(message); // для дебага 
     comments.push(message); // строка записывается в конец массива
+    console.log(comments); // для дебага 
     checkSpam(); // вызов функции проверки на спам
     showComment(); // вызов функции показа обработанного текста 
 }
 
 function checkSpam() {
-    console.log(comments)
+    console.log(comments); // для дебага 
     comments = comments.map(element => {
         if (element.toLowerCase() === 'viagra') {
             return '***';
