@@ -1,6 +1,5 @@
-let comments = []; // массив 
-
-document.querySelector('button').addEventListener('click', addComment); // получаю строку от пользователя, после события нажатия на кнопку и действия функции addComment()
+let comments = []; // пустой массив 
+document.querySelector('button').addEventListener('click', addComment); // получаю строку от пользователя, после события нажатия на кнопку и начала действия функции addComment()
 
 function addComment() {
     let message = document.getElementById('newComment').value; // переменная, в которую записывается строка из textarea, введенная пользователем 
@@ -23,7 +22,6 @@ function checkSpam() {
     let newString = comments.join(' ');
     return newString;
 }
-checkSpam();
 
 function showComment() {
     let optionsString = '';
@@ -32,4 +30,3 @@ function showComment() {
     }
     document.getElementById('container').innerHTML = optionsString;
 }
-showComment();
